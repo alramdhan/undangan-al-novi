@@ -1,5 +1,12 @@
+body {
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -34,5 +41,712 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container-main {
+  width: 50%;
+  margin: auto;
+}
+
+.container-main #btn-control-audio {
+  position: fixed;
+  top: 50%;
+  right: 12px;
+  min-height: 42px;
+  border-radius: 50%;
+  z-index: 100;
+  background-color: #BF9B73;
+  border: 1px solid #800020;
+  box-shadow: 0px 3px 8px #800020;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(191, 155, 115, .5);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 16px rgba(191, 155, 115, 1);
+}
+
+#overlay {
+  background: #ffffff;
+  /* background-image: url("https://st4.depositphotos.com/24899686/28945/i/450/depositphotos_289450710-stock-photo-the-bride-and-grooms-hands.jpg"); */
+  background-image: url('./images/bg-welcome.jfif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  text-align: center !important;
+}
+
+#overlay .content {
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2001;
+  top: 0;
+}
+
+#overlay .content .container {
+  padding-top: 20px;
+}
+
+#overlay .content .couple-main {
+  width: 200px;
+}
+
+#fh5co-header .couple-main {
+  width: 400px;
+}
+
+.foto-home .couple-foto {
+  width: 380px;
+  height: 380px;
+}
+
+.mouse-animation {
+  padding: 0.25rem 0.625rem;
+  height: 2rem;
+  opacity: 0.75;
+  border-radius: 1.4rem;
+  box-sizing: content-box;
+}
+
+.mouse-animation>.scroll-animation {
+  width: 0.25rem;
+  height: 0.625rem;
+  border-radius: 25%;
+  background-color: #808080;
+  animation-name: scroll;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateY(1rem);
+      opacity: 0;
+  }
+
+  10% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+}
+
+@keyframes love {
+  50% {
+      transform: translateY(1rem);
+  }
+}
+
+@keyframes love-reverse {
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+.animate-love {
+  animation: love 5s ease-in-out infinite;
+}
+
+.animate-love-reverse {
+  animation: love-reverse 5s ease-in-out infinite;
+}
+
+.mouse-scroll-home {
+  padding-top: 40px;
+}
+
+@media screen and (max-height: 932px) {
+  #overlay .content .container {
+    padding-top: 100px !important;
+  }
+
+  .judul1 {
+    margin-top: 90px !important;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  #overlay .content .container {
+    padding-top: 100px !important;
+  }
+  .mouse-scroll-home {
+    padding-top: 3% !important;
+  }
+}
+
+@media screen and (max-height: 712px) {
+  #overlay .content .container {
+    padding-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-main {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  #fh5co-header .couple-main {
+    width: 250px;
+  }
+
+  .foto-home .couple-foto {
+    width: 224px !important;
+    height: 224px !important;
+  }
+
+  .layer-sangmempelai {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .layer-mempelai-bottom {
+    width: 100% !important;
+    height: 420px !important;
+    color: #ECEDF1;
+    background: url("./images/layer-ayat.png");
+    background-size: cover;
+    padding: 2rem;
+  }
+
+  .judul1 {
+    margin-top: 120px !important;
+  }
+
+  .mouse-scroll-home {
+    padding-top: 7.5%;
+  }
+
+  #adab-walimah {
+    height: 600px !important;
+  }
+
+  #adab-walimah .img-daftar-adab-walimah {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #gift .rekening1,
+  #gift .rekening2,
+  #gift .rekening3 {
+    width: 300px !important;
+  }
+  #gift .kotak-alamat {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #gift .rekening1,
+  #gift .rekening2,
+  #gift .rekening3 {
+    width: 302px !important;
+  }
+  #gift .kotak-alamat {
+    width: 302px !important;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #gift .rekening1,
+  #gift .rekening2,
+  #gift .rekening3 {
+    width: 295px !important;
+  }
+  #gift .kotak-alamat {
+    width: 295px !important;
+  }
+  .judul1 {
+    margin-top: 120px !important;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  #gift .rekening1,
+  #gift .rekening2,
+  #gift .rekening3 {
+    width: 280px !important;
+  }
+  #gift .kotak-alamat {
+    width: 280px !important;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .judul1 {
+    margin-top: 170px !important;
+  }
+  #ucapan .bunga-ucapan {
+    bottom: -100px !important;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .judul1 {
+    margin-top: 145px !important;
+  }
+  #countdown .container-countdown {
+    width: 96px !important;
+    padding: 23px 30px !important;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .foto-home .couple-foto {
+    width: 240px;
+    height: 240px;
+  }
+  #countdown .container-countdown {
+    width: 84px !important;
+    padding: 15px 24px !important;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .judul1 {
+    margin-top: 116px !important;
+  }
+  #countdown .container-countdown {
+    width: 70px !important;
+    padding: 10px 18px !important;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  #countdown .container-countdown {
+    width: 64px !important;
+    padding: 8px 15px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .foto-home .couple-foto {
+    width: 185px;
+    height: 185px;
+  }
+  #countdown .container-countdown {
+    width: 80px !important;
+    padding: 15px 22px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .foto-home .couple-foto {
+    width: 155px !important;
+    height: 155px !important;
+  }
+  .mouse-scroll-home {
+    padding-top: 10px !important;
+  }
+  #countdown .container-countdown {
+    width: 76px !important;
+    padding: 13px 18px !important;
+  }
+}
+
+.judul1 {
+  margin-top: 200px;
+}
+
+.layer-sangmempelai {
+  width: 100%;
+  min-height: 300px;
+}
+
+.layer-sangmempelai p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #800020;
+  margin: 25px 0;
+}
+
+.layer-sangmempelai h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #800020;
+  margin: 40px 0 !important;
+}
+
+.layer-mempelai-bottom {
+  width: 100%;
+  height: 512px;
+  margin: auto;
+  color: #ECEDF1;
+  background: url("./images/layer-ayat.png");
+  background-size: cover;
+  padding: 2rem;
+}
+
+.layer-mempelai-bottom .ayat-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.layer-mempelai-bottom .ayat-endtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.border-burgundy {
+  border-color: #800020 !important;
+}
+
+.font-esthetic {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 48px;
+  color: #800020 !important;
+}
+
+.text-burgundy {
+  color: #800020 !important;
+}
+
+.text-secondary {
+  color: #BF9B73 !important;
+}
+
+.burgundy {
+  background-color: #800020;
+  color: #EEE !important;
+}
+
+.btn-burgundy {
+  border-color: #BF9B73;
+  background-color: #800020;
+  color: #EEE;
+  transition: all 0.3s ease !important;
+}
+
+.btn-burgundy:hover,
+.btn-burgundy:focus {
+  border: #BF9B73 !important;
+  background-color: #BF9B73 !important;
+  color: #282C34 !important;
+}
+
+.btn-outline-burgundy {
+  border: 1px solid #800020;
+}
+
+.btn-outline-burgundy:hover {
+  border: 1px solid #BF9B73;
+}
+
+.btn-burgundy-sec {
+  border-color: #200E10;
+  background-color: #BF9B73;
+  color: #800020;
+}
+
+.btn-burgundy-sec:hover {
+  border-color: #800020;
+  background-color: #BF9B73;
+  color: #800020;
+}
+
+.tutup-welcome {
+  transform: translateY(0);
+  animation: 3s in-out forwards;
+}
+
+.bg1 {
+  background: url("./images/bg1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bg2 {
+  background: url("./images/bg2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#home .title-pengantin {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#home .title-pengantin .p-pria {
+  position: absolute;
+  top: -20px;
+  left: -78px;
+  right: 0;
+}
+
+#home .title-pengantin .p-wanita {
+  position: absolute;
+  top: 55px;
+  left: 80px;
+  right: 0;
+}
+
+#social-media-dika {
+  padding-top: 20px;
+}
+
+#social-media-novi {
+  padding-top: 20px;
+}
+
+.fh5co-social-icons {
+  margin: 0;
+  padding: 0;
+}
+.fh5co-social-icons li {
+  margin: 0;
+  padding: 5px;
+  min-height: 100px;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
+.fh5co-social-icons li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  color: #EDECF1;
+  padding: 5px 22px;
+  background-color: #800020;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.fh5co-social-icons li a i {
+  font-size: 20px;
+}
+
+#countdown .container-countdown {
+  color: #D1CDDE;
+  width: 109px;
+  background-color: #800020;
+  border-radius: 110px;
+  padding: 30px 35px;
+  box-shadow: 0 8px 14px #BF9B73;
+}
+
+#table-countdown .container-countdown #day, #hour, #minute, #second {
+  color: #EDECF1;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+}
+
+#countdown #table-countdown tbody tr td {
+  background-color: transparent;
+}
+
+#acara-akad,
+#acara-resepsi,
+#acara-syukuran {
+  padding: 30px 15px;
+  margin: 20px 40px 10px 40px;
+  border-radius: 15px;
+  z-index: 1 !important;
+}
+
+#acara-akad hr,
+#acara-resepsi hr,
+#acara-syukuran hr {
+  color: #113468;
+}
+
+#table-acara-akad tbody tr td,
+#table-acara-resepsi tbody tr td,
+#table-acara-syukuran tbody tr td {
+  background: transparent;
+}
+
+#table-acara-akad tbody tr:first-child td,
+#table-acara-resepsi tbody tr:first-child td,
+#table-acara-syukuran tbody tr:first-child td {
+  color: #BF9B73;
+}
+
+#acara-syukuran {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+#acara-resepsi {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+#adab-walimah {
+  padding: 8px 32px;
+  /* width: 100%; */
+  /* height: 780px; */
+  margin: auto;
+  background-image: url('./images/adab-walimah.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gift .container-gift {
+  margin: 10px;
+  padding-left: 25px;
+  padding-top: 20%;
+  padding-right: 25px;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  border: 4px solid #BF9B73;
+  background-color: #800020;
+}
+
+#gift .container-gift p {
+  color: #EDECF1;
+}
+
+#gift .bunga-gift {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  right: 0px;
+}
+
+#gift .bg-bank-ic {
+  background-color: #F2F9F8D3;
+  border: 1px solid #113468;
+  border-radius: 7.5px;
+}
+
+#gift .rekening1,
+#gift .rekening2,
+#gift .rekening3 {
+  text-align: left;
+  margin: auto;
+  padding: 15px;
+  width: 320px;
+  border: 2px solid #BF9B73;
+  border-radius: 10px;
+  color: #EDECF1;
+  background-image: linear-gradient(to bottom right, #BF9B73, #322B2F);
+}
+
+#gift .kotak-alamat {
+  text-align: left;
+  margin: auto;
+  padding: 15px;
+  width: 320px;
+  border: 2px solid #BF9B73;
+  border-radius: 10px;
+  color: #EDECF1;
+  background-image: linear-gradient(to bottom right, #322B2F, #BF9B73);
+}
+
+#ucapan .container-ucapan {
+  margin: 10px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 64px;
+  border-radius: 30px;
+  border: 4px solid #BF9B73;
+  background-color: #800020;
+}
+
+#ucapan .container-ucapan p {
+  color: #EDECF1;
+}
+
+.kotak-ucapannya .avatar-ucapan {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  border-radius: 30px;
+  border: 1px solid #113468;
+}
+
+#ucapan #container-kumpulan-ucapan {
+  max-height: 250px;
+  overflow: auto;
+}
+
+#ucapan #container-kumpulan-ucapan::-webkit-scrollbar {
+  width: 5px;
+}
+
+#ucapan #container-kumpulan-ucapan::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(191, 155, 115, .3);
+  border-radius: 10px;
+}
+
+#ucapan #container-kumpulan-ucapan::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(191, 155, 115, .5);
+}
+
+#table-kumpulan-ucapan .kotak-ucapannya::before {
+  transform: rotate(90deg);
+}
+
+#table-kumpulan-ucapan .kotak-ucapannya {
+  width: 100%;
+  background-color: #EEEFFF;
+  border-radius: 0 15px 15px 15px;
+  background-position: center;
+  text-align: left;
+  padding: 25px 15px;
+}
+
+#ucapan .bunga-ucapan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -130px;
+}
+
+@keyframes in-out {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
