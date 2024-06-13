@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/undangan-al-novi/static/css/main.5a882597.css",
+    "main.js": "/undangan-al-novi/static/js/main.38197eac.js",
+    "static/js/453.0592c678.chunk.js": "/undangan-al-novi/static/js/453.0592c678.chunk.js",
+    "static/media/deen-assalam.mp3": "/undangan-al-novi/static/media/deen-assalam.e07075621ec39edd941b.mp3",
+    "static/media/img-cincin.png": "/undangan-al-novi/static/media/img-cincin.eafb2cb1a90898c58ae9.png",
+    "static/media/bg-mempelai1.png": "/undangan-al-novi/static/media/bg-mempelai1.1a7a987edcbf80e95c84.png",
+    "static/media/bg-mempelai2.png": "/undangan-al-novi/static/media/bg-mempelai2.b1e9cf5d112bedc7724f.png",
+    "static/media/mempelai-wanita.png": "/undangan-al-novi/static/media/mempelai-wanita.f94e28d1997682f45869.png",
+    "static/media/foto-main.png": "/undangan-al-novi/static/media/foto-main.45fd5a1135fd49f9b746.png",
+    "static/media/divider.png": "/undangan-al-novi/static/media/divider.a15aee5cc6f83de405ec.png",
+    "static/media/mempelai-pria.png": "/undangan-al-novi/static/media/mempelai-pria.2c630be7c7fe31c4925c.png",
+    "static/media/adab-walimah.png": "/undangan-al-novi/static/media/adab-walimah.0d76369e37dccbb2c4f3.png",
+    "static/media/bg1.jpg": "/undangan-al-novi/static/media/bg1.44944320f0fd3edc9e61.jpg",
+    "static/media/bg-welcome.jfif": "/undangan-al-novi/static/media/bg-welcome.625668eac9b8bd44e775.jfif",
+    "static/media/bismillah.png": "/undangan-al-novi/static/media/bismillah.4abee8ba3fc280700d1d.png",
+    "static/media/layer-ayat.png": "/undangan-al-novi/static/media/layer-ayat.0395da094b9d0c34cabc.png",
+    "static/media/bg2.jpg": "/undangan-al-novi/static/media/bg2.f384f16fc728468a7a95.jpg",
+    "static/media/bca.png": "/undangan-al-novi/static/media/bca.cac40dfe8d98ff085571.png",
+    "static/media/mandiri.svg": "/undangan-al-novi/static/media/mandiri.bc343b798197670f32fca0bbf59a429c.svg",
+    "index.html": "/undangan-al-novi/index.html",
+    "static/media/instagram.svg": "/undangan-al-novi/static/media/instagram.da7c8b906a74d96374903698f965002d.svg",
+    "static/media/clock-regular.svg": "/undangan-al-novi/static/media/clock-regular.2a4403fa1ad992eb5acd2f0deeef390d.svg",
+    "main.5a882597.css.map": "/undangan-al-novi/static/css/main.5a882597.css.map",
+    "main.38197eac.js.map": "/undangan-al-novi/static/js/main.38197eac.js.map",
+    "453.0592c678.chunk.js.map": "/undangan-al-novi/static/js/453.0592c678.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a882597.css",
+    "static/js/main.38197eac.js"
+  ]
+}
